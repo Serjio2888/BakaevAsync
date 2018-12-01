@@ -1,0 +1,32 @@
+﻿initialize: True
+host: localhost
+dir: 
+    a: /tmp/async_file_storage/A
+    b: /tmp/async_file_storage/B
+    c: /tmp/async_file_storage/C
+port: 
+    a: 8000
+    b: 8001
+    c: 8002
+nodes_for_A:
+    0:
+        host: localhost
+        port: 8001
+    1:
+        host: localhost
+        port: 8002
+
+nodes_for_B:
+    0:
+        host: localhost
+        port: 8000
+    1:
+        host: localhost
+        port: 8002
+nodes_for_C:
+    0:
+        host: localhost
+        port: 8000
+    1:
+        host: localhost
+        port: 8001
